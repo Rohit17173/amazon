@@ -1,0 +1,11 @@
+<p>buyer works!</p>
+
+
+<button (click)="changeCat(1)">cart</button>
+<div *ngIf="WhatToShow==1">
+    <app-cartprodcut></app-cartprodcut>
+</div>
+<button (click)="changeCat(2)">find product</button>
+<div *ngIf="WhatToShow==2">
+    <app-findproduct></app-findproduct>
+</div>

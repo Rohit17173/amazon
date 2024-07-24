@@ -1,0 +1,39 @@
+<p>findproduct works!</p>
+category : <select [(ngModel)]="categoryid">
+    <option *ngFor="let cat of list" [value]="cat.id">{{cat.name}}</option>
+</select>
+minimum price : <input type="text" [(ngModel)]="minprice">
+maxprice : <input type="text" [(ngModel)]="maxprice">
+minrating : <input type="text" [(ngModel)]="minrating">
+
+
+<button (click)="getProd()">add</button>
+
+<table border="1">
+    <tr>
+        <th>SR NO</th>
+        <th>product</th>
+        <th>price</th>
+        <th>rating</th>
+        <th>discount</th>
+        <th>decsription</th>
+        <th>other</th>
+        <th>action</th>
+    </tr>
+    <tr *ngFor="let item of list2;let i =index">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.rating}}</td>
+        <td>{{item.discount}}</td>
+        <td>{{item.description}}</td>
+        <!-- <td>{{item.catName}}</td> -->
+         <td>
+            <p *ngIf="item.quantity <=2">limited stock</p>
+            <p *ngIf="item.quantity >=2">available</p>
+         </td>
+         <td>
+            <button (click)="addCart(item.id)">add to cart</button>
+         </td>
+    </tr>
+</table>

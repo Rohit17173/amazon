@@ -1,0 +1,37 @@
+<p>product works!</p>
+<p>category works!</p>
+
+<!-- disply list -->
+
+<table border="1">
+    <tr>
+        <th>S No</th>
+        <th>name</th>
+        <th>Price</th>
+        <th>rating</th>
+        <th>description</th>
+        <th>discount</th>
+        <th>categoryid</th>
+    </tr>
+    <tr *ngFor="let item of list2;let i =index">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.rating}}</td>
+        <td>{{item.description}}</td>
+        <td>{{item.discount}}</td>
+        <td>{{item.catName}}</td>
+    </tr>
+</table><br><br>
+<h3>add Product</h3>
+
+Name : <input type="text" [(ngModel)]="name"><br>
+Price : <input type="text" [(ngModel)]="price"><br>
+Quantity : <input type="text" [(ngModel)]="quantity"><br>
+Description : <input type="text" [(ngModel)]="description"><br>
+Discount : <input type="text" [(ngModel)]="discount"><br>
+category : <select [(ngModel)]="categoryid">
+    <option *ngFor="let cat of list" [value]="cat.id">{{cat.name}}</option>
+</select>
+
+<button (click)="addProd()">add</button>

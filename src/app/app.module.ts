@@ -11,7 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CategoryComponent } from './admin/category/category.component';
 import { ProductComponent } from './seller/product/product.component';
 import { FindproductComponent } from './buyer/findproduct/findproduct.component';
-import { CartprodcutComponent } from './buyer/cartprodcut/cartprodcut.component'
+import { CartprodcutComponent } from './buyer/cartprodcut/cartprodcut.component';
+import { HistoryComponent } from './buyer/history/history.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CartprodcutComponent } from './buyer/cartprodcut/cartprodcut.component'
     CategoryComponent,
     ProductComponent,
     FindproductComponent,
-    CartprodcutComponent
+    CartprodcutComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,

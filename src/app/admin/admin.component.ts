@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-admin',
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 export class AdminComponent {
   WhatToShow:number=0;
 
-  changeCat(){
-    this.WhatToShow=1;
+  constructor(public app:AppComponent){}
+  changeCat(n:number){
+    this.WhatToShow=n;
+  }
+  logout(){
+    this.app.whatTOShow=0;
   }
 }

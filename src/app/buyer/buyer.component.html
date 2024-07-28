@@ -1,11 +1,18 @@
-<p>buyer works!</p>
+<div class="buyer-container">
+    <!-- <p>buyer works!</p> -->
 
-
-<button (click)="changeCat(1)">cart</button>
-<div *ngIf="WhatToShow==1">
-    <app-cartprodcut></app-cartprodcut>
-</div>
-<button (click)="changeCat(2)">find product</button>
-<div *ngIf="WhatToShow==2">
-    <app-findproduct></app-findproduct>
+    <button (click)="changeCat(1)">Cart</button>
+    <div *ngIf="WhatToShow==1">
+        <app-cartprodcut></app-cartprodcut>
+    </div>
+    
+    <button (click)="changeCat(2)">Find Product</button>
+    <div *ngIf="WhatToShow==2">
+        <app-findproduct></app-findproduct>
+    </div>
+    
+    <button (click)="changeCat(3)">History</button>
+    <div *ngIf="WhatToShow==3">
+        <app-history></app-history>
+    </div>
 </div>

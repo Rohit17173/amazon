@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-buyer',
@@ -7,9 +8,13 @@ import { Component } from '@angular/core';
 })
 export class BuyerComponent {
 
+  constructor(public app:AppComponent){}
   WhatToShow:number=0;
 
   changeCat(a:number){
     this.WhatToShow=a;
+  }
+  logout(){
+    this.app.whatTOShow=0;
   }
 }

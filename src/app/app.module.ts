@@ -12,7 +12,8 @@ import { CategoryComponent } from './admin/category/category.component';
 import { ProductComponent } from './seller/product/product.component';
 import { FindproductComponent } from './buyer/findproduct/findproduct.component';
 import { CartprodcutComponent } from './buyer/cartprodcut/cartprodcut.component';
-import { HistoryComponent } from './buyer/history/history.component'
+import { HistoryComponent } from './buyer/history/history.component';
+import { RegisterComponent } from './register/register.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HistoryComponent } from './buyer/history/history.component'
     ProductComponent,
     FindproductComponent,
     CartprodcutComponent,
-    HistoryComponent
+    HistoryComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

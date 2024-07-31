@@ -35,4 +35,7 @@ export class LoginComponent {
     })
     
   }
+  register(){
+    this.app.whatTOShow=4;
+  }
 }

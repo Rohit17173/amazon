@@ -27,6 +27,6 @@
 <br>
 
 <div *ngIf="whatTOShow==1">
-<input type="number" >
+<input type="number" [(ngModel)]="stars">
 <button (click)="updateRating()" >Rate Product</button>
 </div>

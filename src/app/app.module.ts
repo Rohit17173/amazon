@@ -13,7 +13,15 @@ import { ProductComponent } from './seller/product/product.component';
 import { FindproductComponent } from './buyer/findproduct/findproduct.component';
 import { CartprodcutComponent } from './buyer/cartprodcut/cartprodcut.component';
 import { HistoryComponent } from './buyer/history/history.component';
-import { RegisterComponent } from './register/register.component'
+import { RegisterComponent } from './register/register.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { AdminNavbarComponent } from './admin/admin-navbar/admin-navbar.component';
+import { SellerdetailsComponent } from './admin/sellerdetails/sellerdetails.component';
+import { BuyerdetailsComponent } from './admin/buyerdetails/buyerdetails.component';
+import { AddcategoryComponent } from './admin/addcategory/addcategory.component';
+import { AdminhomeComponent } from './admin/adminhome/adminhome.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +35,15 @@ import { RegisterComponent } from './register/register.component'
     FindproductComponent,
     CartprodcutComponent,
     HistoryComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavbarComponent,
+    HomeComponent,
+    AdminNavbarComponent,
+    SellerdetailsComponent,
+    BuyerdetailsComponent,
+    AddcategoryComponent,
+    AdminhomeComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

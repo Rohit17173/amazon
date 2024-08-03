@@ -1,9 +1,22 @@
+<app-admin-navbar></app-admin-navbar>
 <div class="admin-container">
-    <p>admin works!</p>
-    <button (click)="changeCat(1)">Category</button>
-    <div *ngIf="WhatToShow==1">
-        <app-category></app-category>
-    </div>
-    <button (click)="logout()">logout</button>
-</div>
+  <div class="side">
+    <app-sidebar></app-sidebar>
+  </div>
 
+  <div *ngIf="WhatToShow == 0" class="cnt">
+    <app-adminhome></app-adminhome>
+  </div>
+  <div *ngIf="WhatToShow == 1" class="cnt">
+    <app-category></app-category>
+  </div>
+  <div *ngIf="WhatToShow == 2" class="cnt">
+    <app-sellerdetails></app-sellerdetails>
+  </div>
+  <div *ngIf="WhatToShow == 3" class="cnt">
+    <app-buyerdetails></app-buyerdetails>
+  </div>
+  <div *ngIf="WhatToShow == 4" class="cnt">
+    <app-addcategory></app-addcategory>
+  </div>
+</div>

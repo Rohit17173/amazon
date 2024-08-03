@@ -1,8 +1,8 @@
-.category-container{
+.container{
     margin-left: 5%;
+    /* border: 3px solid black; */
     margin-right: 5%;
 }
-
 table {
     width: 100%;
     border-collapse: collapse;

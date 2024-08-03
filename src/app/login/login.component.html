@@ -1,11 +1,27 @@
 <!-- <p>login works!</p> -->
 
-<div class="login-container">
+<!-- <div class="login-container">
     
     <label for="username">Username:</label>
-    <input type="text" id="username" [(ngModel)]="username"><br>
+    <input type="text" id="username"><br>
     <label for="password">Password:</label>
-    <input type="password" id="password" [(ngModel)]="password"><br>
-    <button (click)="login()">Login</button>
-    <button (click)="register()">Register</button>
+    <input type="password" id="password" ><br>
+    
+    <button >Register</button>
+</div> -->
+
+<div class="container">
+    <h2>Login</h2>
+    <form  method="post">
+        <!-- <label for="username" >Username</label> -->
+        <input type="text" id="username" name="username" placeholder="Your username.." [(ngModel)]="username" required>
+
+        <!-- <label for="password" >Password</label> -->
+        <input type="password" id="password" name="password" placeholder="Your password.." [(ngModel)]="password" required>
+        <button (click)="login()">Login</button>
+        <!-- <input type="submit" value="Login"> -->
+    </form>
+    <div class="register-link">
+        <p>If you are not registered, <a (click)="register()">register here</a>.</p>
+    </div>
 </div>

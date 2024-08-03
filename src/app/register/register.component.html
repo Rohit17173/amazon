@@ -1,12 +1,20 @@
-<!-- <p>register works!</p> -->
-<h3>Registration form</h3>
-Name: <input type="text" [(ngModel)]="name"><br>
-<!-- email: <input type="text" [(ngModel)]="email"><br> -->
-username: <input type="text" [(ngModel)]="username"><br>
-password: <input type="text" [(ngModel)]="password"><br>
-Account type: <select [(ngModel)]="accounttype">
-    <option  [value]="2">seller</option>
-    <option  [value]="3">buyer</option>
-</select><br>
-
-<button (click)="register()">Register</button>
+<div class="container">
+    <h3>Registration form</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" [(ngModel)]="name"><br>
+  
+    <label for="username">Username:</label>
+    <input type="text" id="username" [(ngModel)]="username"><br>
+  
+    <label for="password">Password:</label>
+    <input type="text" id="password" [(ngModel)]="password"><br>
+  
+    <label for="accounttype">Account type:</label>
+    <select id="accounttype" [(ngModel)]="accounttype">
+        <option [value]="2">seller</option>
+        <option [value]="3">buyer</option>
+    </select><br>
+  
+    <button (click)="register()">Register</button>
+  </div>
+  

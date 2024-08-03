@@ -1,6 +1,6 @@
 .container {
-    max-width: 450px;
-    margin: 50px auto;
+    max-width: 400px;
+    margin: 20px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -13,9 +13,8 @@
     margin-bottom: 20px;
   }
   
-  input[type="text"],
-  select {
-    width: 100%;
+  input[type="text"] {
+    width: calc(100% - 22px);
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -36,16 +35,5 @@
   
   button:hover {
     background-color: #45a049;
-  }
-  
-  label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-  }
-  
-  .error {
-    color: red;
-    margin: 10px 0;
   }
   

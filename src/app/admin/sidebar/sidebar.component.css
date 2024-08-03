@@ -1,0 +1,10 @@
+.main-content {
+    
+    overflow: hidden;
+}
+.sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    height: calc(100vh - 56px); /* Adjust based on the height of the navbar */
+    overflow-y: auto;
+}

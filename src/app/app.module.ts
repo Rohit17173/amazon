@@ -22,6 +22,13 @@ import { BuyerdetailsComponent } from './admin/buyerdetails/buyerdetails.compone
 import { AddcategoryComponent } from './admin/addcategory/addcategory.component';
 import { AdminhomeComponent } from './admin/adminhome/adminhome.component';
 import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { SellernavbarComponent } from './seller/sellernavbar/sellernavbar.component';
+import { AddproductComponent } from './seller/addproduct/addproduct.component';
+import { SellersidebarComponent } from './seller/sellersidebar/sellersidebar.component';
+import { SellerhomeComponent } from './seller/sellerhome/sellerhome.component';
+import { BuyerNavbarComponent } from './buyer/buyer-navbar/buyer-navbar.component';
+import { BuyerHomeComponent } from './buyer/buyer-home/buyer-home.component';
+import { AddProdductComponent } from './seller/add-prodduct/add-prodduct.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +50,14 @@ import { SidebarComponent } from './admin/sidebar/sidebar.component';
     BuyerdetailsComponent,
     AddcategoryComponent,
     AdminhomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    SellernavbarComponent,
+    AddproductComponent,
+    SellersidebarComponent,
+    SellerhomeComponent,
+    BuyerNavbarComponent,
+    BuyerHomeComponent,
+    AddProdductComponent
   ],
   imports: [
     BrowserModule,

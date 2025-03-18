@@ -1,9 +1,20 @@
+<app-sellernavbar></app-sellernavbar>
 <div class="seller-container">
-    <p>seller works!</p>
+  <div>
+    <app-sellersidebar></app-sellersidebar>
+  </div>
+
+  <!-- 
     <button (click)="changeCat()">Product</button>
-    <button (click)="logout()">logout</button>
-    <div *ngIf="WhatToShow==1">
-        <app-product></app-product>
-    </div>
-    
+    <button (click)="logout()">logout</button>  -->
+  <div *ngIf="WhatToShow == 0" class="cnt">
+    <app-sellerhome></app-sellerhome>
+  </div>
+  <div *ngIf="WhatToShow == 1" class="cnt">
+    <app-product></app-product>
+  </div>
+  <div *ngIf="WhatToShow == 2" class="cnt">
+
+    <app-addproduct></app-addproduct>
+  </div>
 </div>

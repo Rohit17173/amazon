@@ -15,5 +15,4 @@ export class SidebarComponent {
   logout(){
     // whatTOShow=0;
   }
-
 }

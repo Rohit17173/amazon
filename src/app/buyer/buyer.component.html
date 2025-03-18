@@ -1,7 +1,15 @@
+
+<app-buyer-navbar></app-buyer-navbar>
+
+<div *ngIf="WhatToShow==0">
+    <app-buyer-home></app-buyer-home>
+</div>
+  
+
 <div class="buyer-container">
     <!-- <p>buyer works!</p> -->
 
-    <button (click)="changeCat(1)">Cart</button>
+    <!-- <button (click)="changeCat(1)">Cart</button> -->
     <button (click)="changeCat(2)">Find Product</button>
     <button (click)="changeCat(3)">History</button>
     <div *ngIf="WhatToShow==1">

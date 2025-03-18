@@ -1,0 +1,32 @@
+.hero-image {
+    /* height: 50vh; Show only half of the image */
+    object-fit: cover;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+  }
+  
+  .category-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .category-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .category-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
